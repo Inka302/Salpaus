@@ -1,0 +1,2 @@
+# Salpaus
+Salpauksen ohjelmistokehittäjän kouluhommat
