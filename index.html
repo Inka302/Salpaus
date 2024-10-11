@@ -68,7 +68,6 @@
                 <form>
                     <input type="button" id="poista" name="poista" value="Poista kappale" onclick="poistaP()"><br>
                 </form>
-                  
                 <script>
                   function poistaP() {
                     document.getElementById("para").style.display = "none";
@@ -79,6 +78,15 @@
                     Let:illä tehtyjä muuttujia pystyy käyttää vain kyseisen '{}' kohdan sisällä<br>
                     Var taas toimii koko tiedoston sisällä.<br> 
                   </p>
+             <p id="arvo"></p>
+                <script>
+                    let luku = 17;
+                    if (luku < 18) {
+                        document.getElementById("arvo").innerHTML = "Alaikäinen";
+                    } else {
+                        document.getElementById("arvo").innerHTML = "Täysi-ikäinen";
+                    }
+                </script>
         </body>
         
     </html>
