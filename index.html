@@ -7,21 +7,20 @@
         </head>
 
         <body>
-            <form class="dForm">
-                <input type="button" id="night" name="night" value="Enter Night Mode"><br>
-            </form>
-            <script>
-                function changeTextColor() {
-                  document.getElementsByClassName("text").style.color = "gray";
-                }
-                </script>
-            <div class="dDiv">
                 <p>Testailua</p>
             </div>
             <h1>Iso otsikko</h1>
             <h2>Tyhjät tägit</h2>
-            <p class="text">Tyhjiin tägeihin ei kuulu sulkea kuten muut tägit.</p><br>
+            <p>Tyhjiin tägeihin ei kuulu sulkea kuten muut tägit.</p><br>
             <br>
+            <form>
+            <input type="button" id="ruskee" name="ruskee" value="Vaihda kappaleen väri" onclick="värinvaihto()"><br>
+            </form>
+            <script>
+            function värinvaihto() {
+                document.getElementById("para").style.color = "brown";
+                }
+            </script>
             <h3>Case sensetivity</h3>
             <p id="para">Case sensetive tarkoittaa, että esimerkiksi file.js ja File.js
                 ovat eri tiedostot,<br> koska toisessa on iso F, kun toisessa taas pieni.
