@@ -23,7 +23,7 @@
             <p class="text">Tyhjiin tägeihin ei kuulu sulkea kuten muut tägit.</p><br>
             <br>
             <h3>Case sensetivity</h3>
-            <p class="text">Case sensetive tarkoittaa, että esimerkiksi file.js ja File.js
+            <p id="para">Case sensetive tarkoittaa, että esimerkiksi file.js ja File.js
                 ovat eri tiedostot,<br> koska toisessa on iso F, kun toisessa taas pieni.
                 Vaikka sana on sama,<br> jos toisessa käytetään jossain kohtaa isoa kirjainta
                 ja toisessa ei, ne eivät<br> silloin viittaa samaan tiedostoon. Kaikkien kirjaimien
@@ -65,6 +65,15 @@
                     <input type="checkbox" id="none" name="none" value="none">
                     <label for="none">None of the above</label><br>
                 </form>
+                <form>
+                    <input type="button" id="poista" name="poista" value="Poista kappale" onclick="poistaP()"><br>
+                </form>
+                  
+                <script>
+                  function poistaP() {
+                    document.getElementById("para").style.display = "none";
+                  }
+                </script>
         </body>
         
     </html>
