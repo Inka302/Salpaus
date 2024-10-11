@@ -103,6 +103,22 @@
                 }
                 document.getElementById("lista").innerHTML = eläin.join(" ");
                 </script>
+                            <label for="etunimi">Etunimi:</label>
+                <input type="text" id="etunimi" name="etunimi"><br>
+                <label for="sukunimi">Sukunimi:</label>
+                <input type="text" id="sukunimi" name="sukunimi"><br>
+                <button onclick="heiNappula()">Hei!</button>
+                <p id="hei"></p>
+                <script>
+                function heiNimi(etunimi, sukunimi) {
+                  return "Hei " + etunimi + " " + sukunimi;
+                }
+                function displayGreeting() {
+                  const etunimi = document.getElementById("etunimi").value;
+                  const sukunimi = document.getElementById("sukunimi").value;
+                  document.getElementById("hei").innerHTML = heiNimi(etunimi, sukunimi);
+                }
+                </script>
         </body>
         
     </html>
