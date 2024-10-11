@@ -87,11 +87,13 @@
                         document.getElementById("arvo").innerHTML = "Täysi-ikäinen";
                     }
                 </script>
-                 <script>
-                    let eläin = ["Koira", "Kissa", "Hevonen", "Hiiri", "Marsu"];
-                    for(let i = 0; i < eläin.length; i++) {
-                      eläin[i] += "!";
-                    }
+               <p id="lista"></p>
+                <script>
+                let eläin = ["Koira", "Kissa", "Hevonen", "Hiiri", "Marsu"];
+                for(let i = 0; i < eläin.length; i++) {
+                  eläin[i] += "!";
+                }
+                document.getElementById("lista").innerHTML = eläin.join(", ");
                 </script>
         </body>
         
