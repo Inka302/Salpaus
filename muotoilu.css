@@ -12,6 +12,7 @@ a:hover {
 .dDiv {
     border: 5px outset green;
     background-color: lightblue;
+    overflow: hidden;
     color: white;
     text-align: center;
     padding: 10px;
