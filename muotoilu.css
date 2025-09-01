@@ -13,6 +13,7 @@ a:hover {
     border: 5px outset green;
     background-color: darkblue;
     height: 100px;
+    width: 400px;
     color: white;
     text-align: center;
     padding: 10px;
